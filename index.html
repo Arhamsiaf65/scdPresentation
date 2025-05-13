@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GitHub Presentation - Arham & Zaheer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      overflow: hidden;
+      background: #f4f6f9;
+    }
+    .slide {
+      display: none;
+      width: 100vw;
+      height: 100vh;
+      padding: 60px;
+      background: white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow-y: auto;
+    }
+    .slide.active {
+      display: block;
+    }
+    h1, h2 {
+      color: #0969da;
+    }
+    p {
+      margin: 10px 0 15px;
+      font-size: 1.1em;
+    }
+    ul, ol {
+      margin: 15px 0 0 25px;
+    }
+    code {
+      background: #eee;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    .controls {
+      position: fixed;
+      bottom: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 40px;
+    }
+    .controls button {
+      background: #0969da;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .controls button:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+    @media (max-width: 600px) {
+      .slide {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Slide 1: Title -->
+<div class="slide active">
+  <h1>GitHub Presentation</h1>
+  <p><strong>Presented by Arham & Zaheer</strong></p>
+  <p>An overview of GitHub, its features, history, and importance in modern software development.</p>
+</div>
+
+<!-- Slide 2: What is GitHub -->
+<div class="slide">
+  <h2>What is GitHub?</h2>
+  <p>GitHub is a cloud-based platform that uses Git for version control and enables collaborative software development.</p>
+  <ul>
+    <li>Allows developers to store, track, and collaborate on code projects.</li>
+    <li>Provides tools for issue tracking, code reviews, project management, and CI/CD integration.</li>
+    <li>Hosts millions of open-source and private repositories worldwide.</li>
+  </ul>
+</div>
+
+<!-- Slide 3: History -->
+<div class="slide">
+  <h2>History: How the Idea Emerged</h2>
+  <p>Before GitHub, managing code collaboration was difficult, especially across teams.</p>
+  <ul>
+    <li><strong>2005:</strong> Git was created by Linus Torvalds to manage the Linux kernel.</li>
+    <li><strong>2008:</strong> GitHub was launched by Tom Preston-Werner, Chris Wanstrath, and PJ Hyett.</li>
+    <li>It simplified Git usage through a friendly web interface and rapidly gained popularity.</li>
+  </ul>
+</div>
+
+<!-- Slide 4: What is Git -->
+<div class="slide">
+  <h2>What is Git?</h2>
+  <p>Git is a distributed version control system used to manage source code history.</p>
+  <ul>
+    <li>Stores snapshots of code over time.</li>
+    <li>Supports collaboration across multiple developers without data conflicts.</li>
+    <li>Important Git commands:
+      <ul>
+        <li><code>git add</code> – stage changes</li>
+        <li><code>git commit</code> – save changes</li>
+        <li><code>git push</code> – upload changes to GitHub</li>
+        <li><code>git pull</code> – download latest updates</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<!-- Slide 5: How to Use GitHub -->
+<div class="slide">
+  <h2>How to Use GitHub (Basics)</h2>
+  <ol>
+    <li>Create a free GitHub account at <code>github.com</code></li>
+    <li>Set up Git on your local machine</li>
+    <li>Create a new repository on GitHub</li>
+    <li>Clone it using <code>git clone &lt;repo-url&gt;</code></li>
+    <li>Make changes locally, then:
+      <ul>
+        <li><code>git add .</code></li>
+        <li><code>git commit -m "message"</code></li>
+        <li><code>git push</code></li>
+      </ul>
+    </li>
+    <li>Use Pull Requests to contribute and review code</li>
+  </ol>
+</div>
+
+<!-- Slide 6: GitHub Features -->
+<div class="slide">
+  <h2>Key Features of GitHub</h2>
+  <ul>
+    <li><strong>Repositories:</strong> Code containers</li>
+    <li><strong>Branches:</strong> Work on features without affecting main code</li>
+    <li><strong>Pull Requests:</strong> Code merging and review process</li>
+    <li><strong>Issues:</strong> Bug tracking and task planning</li>
+    <li><strong>Actions:</strong> Automate workflows (CI/CD)</li>
+  </ul>
+</div>
+
+<!-- Slide 7: GitHub for Collaboration -->
+<div class="slide">
+  <h2>GitHub for Team Collaboration</h2>
+  <p>GitHub enables seamless collaboration across remote teams:</p>
+  <ul>
+    <li>Assign tasks using issues</li>
+    <li>Discuss code in pull requests</li>
+    <li>Track project progress with GitHub Projects</li>
+    <li>Use Wikis for internal documentation</li>
+    <li>Control access with team permissions</li>
+  </ul>
+</div>
+
+<!-- Slide 8: Why GitHub Matters -->
+<div class="slide">
+  <h2>Why GitHub is Important</h2>
+  <ul>
+    <li>Widely used across the tech industry</li>
+    <li>Essential for contributing to open-source projects</li>
+    <li>Boosts collaboration, accountability, and productivity</li>
+    <li>Integrates with tools like VS Code, Slack, and CI platforms</li>
+    <li>Employers often check GitHub profiles during hiring</li>
+  </ul>
+</div>
+
+<!-- Slide 9: Real World Examples -->
+<div class="slide">
+  <h2>Real-World Use Cases</h2>
+  <ul>
+    <li><strong>Open-source:</strong> React, Node.js, TensorFlow hosted on GitHub</li>
+    <li><strong>Education:</strong> Universities use GitHub Classroom for assignments</li>
+    <li><strong>Companies:</strong> Microsoft, Google, and startups rely on GitHub for internal development</li>
+    <li><strong>Hackathons:</strong> Developers collaborate and showcase projects</li>
+  </ul>
+</div>
+
+<!-- Slide 10: Final Thoughts -->
+<div class="slide">
+  <h2>Final Thoughts</h2>
+  <p>GitHub revolutionized how developers collaborate and manage code. It's more than just a version control tool—it's a platform for innovation, learning, and teamwork.</p>
+  <p>Understanding Git and GitHub is crucial for any developer today.</p>
+</div>
+
+<!-- Slide 11: Thank You -->
+<div class="slide">
+  <h2>Thank You!</h2>
+  <p>We appreciate your attention.</p>
+  <p><strong>Presented by:</strong> Arham & Zaheer</p>
+  <p>© 2025 GitHub Presentation</p>
+</div>
+
+<!-- Controls -->
+<div class="controls">
+  <button id="prev">← Previous</button>
+  <button id="next">Next →</button>
+</div>
+
+<!-- Script -->
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+    document.getElementById('prev').disabled = index === 0;
+    document.getElementById('next').disabled = index === slides.length - 1;
+  }
+
+  document.getElementById('prev').addEventListener('click', () => {
+    if (currentSlide > 0) {
+      currentSlide--;
+      showSlide(currentSlide);
+    }
+  });
+
+  document.getElementById('next').addEventListener('click', () => {
+    if (currentSlide < slides.length - 1) {
+      currentSlide++;
+      showSlide(currentSlide);
+    }
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight') document.getElementById('next').click();
+    if (e.key === 'ArrowLeft') document.getElementById('prev').click();
+  });
+</script>
+
+</body>
+</html>
